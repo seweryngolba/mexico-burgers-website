@@ -17,12 +17,15 @@
       <div class="site-name">
         <a href="#" class="title-food">MEXICO BURGERS</a>
       </div>
-      <nav class="navbar">
-        <a class="nav-item" href="#">ABOUT</a>
-        <a class="nav-item" href="#">MENU</a>
-        <a class="nav-item" href="#">CONTACT</a>
-      </nav>
-      <div class="mobile-nav"><i class="fa-solid fa-bars ham-menu"></i></div>
+      <div id="navbar" class="navbar">
+        <a class="nav-item" href="#about">ABOUT</a>
+        <a class="nav-item" href="#menu">MENU</a>
+        <a class="nav-item" href="#contact">CONTACT</a>
+      </div>
+      <div id="mobile-nav" class="mobile-nav">
+        <i id="ham-menu" class="fa-solid fa-bars ham-menu"></i>
+        <i id="close-menu" class="fa-solid fa-x ham-menu-close"></i>
+      </div>
     </header>
     <section class="banner">
       <div class="main-photo-box">
@@ -45,7 +48,7 @@
         />
       </div>
     </section>
-    <main class="about">
+    <main id="about" class="about">
       <h2 class="about-title">ABOUT US</h2>
       <div class="about-us">
         <img class="about-photo" src="./assets/restaurant.jpg" />
@@ -90,7 +93,7 @@
       </div>
     </section>
     <section class="menu">
-      <h2 class="menu-name">MENU</h2>
+      <h2 id="menu" class="menu-name">MENU</h2>
       <div class="menu-page">
         <div class="burger-container">
           <div class="page-one">
@@ -180,7 +183,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2 class="contact-title">CONTACT</h2>
       <div class="contact-box">
         <p class="box-element">Mexico Burger</p>
@@ -198,5 +201,6 @@
         <i class="fa-brands fa-instagram foot-icon"></i>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

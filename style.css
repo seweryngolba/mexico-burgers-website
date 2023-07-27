@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary: #feefe0;
   --secondary: #f94238;
@@ -71,11 +75,18 @@ body {
 }
 
 .mobile-nav {
+  width: 30px;
+  height: 30px;
 }
 
 .ham-menu {
   font-size: 24px;
   color: var(--secondary);
+}
+.ham-menu-close {
+  font-size: 24px;
+  color: var(--secondary);
+  display: none;
 }
 
 .banner {
@@ -133,12 +144,9 @@ body {
 }
 
 .about {
-  /* height: 100vh; */
   width: 100%;
-  /* background: var(--primary); */
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -349,4 +357,77 @@ body {
 .foot-icon {
   font-size: 24px;
   color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    padding: 20px 0;
+  }
+  .arrows {
+    margin-top: 10px;
+  }
+  .best-photo {
+    height: 240px;
+  }
+  .burger-container {
+    width: 100%;
+    flex-direction: row;
+  }
+  .menu-page {
+    padding-bottom: 40px;
+  }
+  .footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-text {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .icons {
+    margin-right: 20px;
+  }
+  .foot-icon {
+    font-size: 32px;
+  }
+  .contact-box {
+    transform: rotate(-2deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-image {
+    font-size: 48px;
+  }
+  .title-food {
+    font-size: 48px;
+    /* margin-left: 80px; */
+    white-space: normal;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .navbar {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+    background: var(--primary);
+  }
+
+  .nav-item {
+    font-size: 32px;
+    color: var(--secondary);
+  }
+  .mobile-nav {
+    display: none;
+  }
 }
