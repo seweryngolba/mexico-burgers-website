@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #feefe0;
+  --secondary: #f94238;
+  --thirdColor: #ffdd02;
+  --accent: #02bd6f;
+  --secondAccent: #01b0e3;
+  --neutral: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  z-index: 100;
+}
+
+.logo {
+}
+
+.logo-image {
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+.site-name {
+}
+
+.title-food {
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+.navbar {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  display: none;
+  align-items: end;
+  flex-direction: column;
+  background: var(--secondary);
+  width: 100%;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Luckiest Guy", cursive;
+  color: var(--primary);
+  padding: 15px 15px 15px 0;
+}
+
+.mobile-nav {
+}
+
+.ham-menu {
+  font-size: 24px;
+  color: var(--secondary);
+}
+
+.banner {
+  /* background-color: var(--primary); */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  transform: skewY(-5deg);
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  font-size: 32px;
+  color: var(--primary);
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(-5deg);
+  border-bottom: 4px solid var(--primary);
+  border-top: 4px solid var(--primary);
+  z-index: 2;
+}
+
+.main-photo-box {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.main-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-bottom {
+  transform: scaleX(-1);
+}
+
+.arrow {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+.about {
+  /* height: 100vh; */
+  width: 100%;
+  /* background: var(--primary); */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.about-title {
+  background-color: var(--secondary);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 32px;
+  color: var(--primary);
+  letter-spacing: 4px;
+}
+
+.about-photo {
+  width: 100%;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.text-about {
+  padding: 10px;
+  margin-top: -7px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.bestsellers {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: var(--primary);
+}
+
+.bestsellers-name {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 80%;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 32px;
+  color: var(--thirdColor);
+  letter-spacing: 4px;
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+
+.best-photo {
+  width: 80%;
+  height: 180px;
+}
+
+.best-position {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.position-describtion {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: var(--primary);
+  width: 80%;
+  padding: 15px 0;
+  border: 2px solid var(--secondary);
+}
+
+.position-name {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 24px;
+  color: var(--secondary);
+}
+
+.ingredients {
+  padding: 0 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.burger-one {
+  color: var(--secondAccent);
+}
+
+.describtion-one {
+  border: 2px solid var(--secondAccent);
+}
+
+.burger-two {
+  color: var(--accent);
+}
+
+.describtion-two {
+  border: 2px solid var(--accent);
+}
+
+.best-of-three {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0 20px 0;
+}
