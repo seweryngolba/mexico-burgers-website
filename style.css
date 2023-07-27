@@ -166,6 +166,7 @@ body {
   font-weight: bold;
   background-color: var(--accent);
   color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
 }
 
 .bestsellers {
@@ -177,7 +178,7 @@ body {
 }
 
 .bestsellers-name {
-  margin: 10px 0;
+  margin: 20px 0 10px 0;
   padding: 10px 0;
   width: 80%;
   text-align: center;
@@ -247,4 +248,105 @@ body {
   flex-direction: column;
   gap: 15px;
   padding: 10px 0 20px 0;
+}
+
+.menu {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-name {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 32px;
+  color: var(--secondary);
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.menu-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.burger-container {
+  width: 90%;
+  border: 2px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.burger-name,
+.burger-price {
+  color: var(--secondary);
+  padding: 5px 6px;
+}
+
+.burger-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact {
+  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.contact-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 32px;
+  color: var(--primary);
+  padding: 10px 0;
+}
+
+.contact-box {
+  width: 80%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  transform: rotate(-5deg);
+}
+
+.box-element {
+  color: var(--secondary);
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--secondary);
+  border-top: 3px solid var(--primary);
+}
+
+.footer-text {
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foot-icon {
+  font-size: 24px;
+  color: var(--primary);
 }
