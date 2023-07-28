@@ -37,7 +37,7 @@ To run the website locally, follow these steps:
 2. Navigate to the project folder: `cd mexico-burgers-website`
 3. Open `index.html` in your web browser.
 
-Alternatively, you can access the live version of the website at [Demo page](https://www.mexico-burgers.com).
+Alternatively, you can access the live version of the website at [Demo page](https://mexico-burgers-s-golba.netlify.app/).
 
 ## How to Use
 
